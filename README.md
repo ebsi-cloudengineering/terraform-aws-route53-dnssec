@@ -230,6 +230,7 @@ Available targets:
 
 | Name | Description |
 |------|-------------|
+| <a name="output_ds_record"></a> [ds\_record](#output\_ds\_record) | DS record for zone |
 | <a name="output_key_arn"></a> [key\_arn](#output\_key\_arn) | KMS key arn for Route53 DNSSEC CMK |
 | <a name="output_this_key_arn"></a> [this\_key\_arn](#output\_this\_key\_arn) | Deprecated: KMS key arn for Route53 DNSSEC CMK |
 <!-- markdownlint-restore -->
@@ -287,7 +288,7 @@ In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
 
 ## Copyrights
 
-Copyright © 2021-2022 [UnderGrid Network Services](https://undergrid.net)
+Copyright © 2021-2024 [UnderGrid Network Services](https://undergrid.net)
 
 
 
