@@ -1,12 +1,18 @@
 {
   "extends": [
-    "config:base",
+    "config:recommended",
     ":preserveSemverRanges"
   ],
-  "labels": ["auto-update"],
-  "enabledManagers": ["terraform"],
+  "labels": [
+    "auto-update"
+  ],
+  "enabledManagers": [
+    "terraform"
+  ],
   "terraform": {
-    "ignorePaths": ["**/context.tf", "examples/**"]
+    "ignorePaths": [
+      "**/context.tf",
+      "examples/**"
+    ]
   }
 }
-
