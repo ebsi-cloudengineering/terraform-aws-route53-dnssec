@@ -59,6 +59,7 @@
 
 | Name | Description |
 |------|-------------|
+| <a name="output_ds_record"></a> [ds\_record](#output\_ds\_record) | DS record for zone |
 | <a name="output_key_arn"></a> [key\_arn](#output\_key\_arn) | KMS key arn for Route53 DNSSEC CMK |
 | <a name="output_this_key_arn"></a> [this\_key\_arn](#output\_this\_key\_arn) | Deprecated: KMS key arn for Route53 DNSSEC CMK |
 <!-- markdownlint-restore -->
