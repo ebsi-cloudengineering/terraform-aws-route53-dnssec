@@ -1,5 +1,5 @@
 module "kms_key" {
-  source                   = "cloudposse/kms-key/aws"
+  source                   = "github.com/cloudposse/kms-key/aws"
   version                  = "0.12.2"
   description              = "Route53 DNSSEC customer managed CMK"
   deletion_window_in_days  = var.deletion_window_in_days
@@ -9,6 +9,7 @@ module "kms_key" {
   policy                   = data.aws_iam_policy_document.ksk.json
   context                  = module.this.context
   attributes               = ["ksk"]
+  alias                    = "alias/ksk-${each.value.zone_id}"
 }
 
 resource "random_string" "ksk" {
