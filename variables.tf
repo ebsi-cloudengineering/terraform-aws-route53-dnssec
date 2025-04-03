@@ -29,7 +29,7 @@ variable "deletion_window_in_days" {
 
 variable "alias" {
   type        = string
-  default     = "alias/ksk-${each.value.zone_id}"
+  default     = ""
   description = "The display name of the alias. The name must start with the word `alias` followed by a forward slash. If not specified, the alias name will be auto-generated."
 }
 
