@@ -9,7 +9,7 @@ module "kms_key" {
   policy                   = data.aws_iam_policy_document.ksk.json
   context                  = module.this.context
   attributes               = ["ksk"]
-  alias                    = "alias/ksk-${each.value.zone_id}"
+  alias                    = var.alias
 }
 
 resource "random_string" "ksk" {
