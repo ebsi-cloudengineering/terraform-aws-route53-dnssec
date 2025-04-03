@@ -1,5 +1,5 @@
 module "kms_key" {
-  source                   = "github.com/cloudposse/kms-key/aws"
+  source                   = "cloudposse/kms-key/aws"
   version                  = "0.12.2"
   description              = "Route53 DNSSEC customer managed CMK"
   deletion_window_in_days  = var.deletion_window_in_days
